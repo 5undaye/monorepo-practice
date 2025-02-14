@@ -2,9 +2,6 @@ import ReactDOM from "react-dom/client";
 
 import "./index.css";
 import { Button, Input } from "@career-up/ui-kit";
-import { test } from "@career-up/shell-router";
-
-test();
 
 const App = () => (
   <div className="mt-10 text-3xl mx-auto max-w-6xl">
