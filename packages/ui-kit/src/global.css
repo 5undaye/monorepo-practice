@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: hsl(0 0% 100%);
+  --background: #f4f2ee;
   --foreground: hsl(224 71.4% 4.1%);
   --card: hsl(0 0% 100%);
   --card-foreground: hsl(224 71.4% 4.1%);
