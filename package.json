@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "dev": "turbo start",
+    "dev": "turbo start",
     "build": "turbo build",
     "serve": "turbo build:start"
   },

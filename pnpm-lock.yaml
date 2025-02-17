@@ -93,6 +93,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
+      react-router-dom:
+        specifier: ^7.1.5
+        version: 7.1.5(react-dom@19.0.0)(react@19.0.0)
     devDependencies:
       '@rspack/cli':
         specifier: ~1.2.0

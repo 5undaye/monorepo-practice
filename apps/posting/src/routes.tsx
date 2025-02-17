@@ -8,7 +8,7 @@ export const routes: RouteObject[] = [
     errorElement: <div>Error</div>,
     children: [
       { index: true, element: <div>Posting Home</div> },
-      { path: "1", element: <div>Posting 1</div> },
+      { path: "1", element: <div>Posting 1000</div> },
     ],
   },
 ];

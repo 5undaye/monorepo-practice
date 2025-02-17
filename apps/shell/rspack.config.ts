@@ -4,7 +4,6 @@ import { rspack } from "@rspack/core";
 import * as RefreshPlugin from "@rspack/plugin-react-refresh";
 import { ModuleFederationPlugin } from "@module-federation/enhanced/rspack";
 
-
 import { mfConfig } from "./module-federation.config";
 
 const isDev = process.env.NODE_ENV === "development";
@@ -18,6 +17,12 @@ export default defineConfig({
     main: "./src/index.ts",
   },
   resolve: {
+    alias: {
+      "posting/injector": path.resolve(
+        __dirname,
+        "../posting/src/injector.tsx"
+      ),
+    },
     extensions: ["...", ".ts", ".tsx", ".jsx"],
   },
 
