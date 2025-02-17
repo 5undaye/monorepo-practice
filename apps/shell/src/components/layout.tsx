@@ -1,14 +1,20 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
 
-import {
-  appEduBasename,
-  appJobBasename,
-  appNetworkBasename,
-  appPostingBasename,
-} from "../constants/prefix";
-import { Icon } from "@career-up/ui-kit";
+import { appEduBasename, appJobBasename, appNetworkBasename, appPostingBasename } from "../constants/prefix";
+import { Button, Icon } from "@career-up/ui-kit";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Layout = () => {
+  const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
+
+  const handleLogin = async () => {
+    await loginWithRedirect({ appState: { returnTo: "/" } });
+  };
+
+  const handleLogout = async () => {
+    await logout({ logoutParams: { returnTo: window.location.origin } });
+  };
+
   return (
     <div>
       <header className="fixed top-0 left-0 w-screen z-[105] bg-white border-b border-b-[rgba(0,0,0,0.2)]">
@@ -32,7 +38,16 @@ const Layout = () => {
             </svg>
             <span>Find Me</span>
           </Link>
-
+          {!isAuthenticated && (
+            <div className="ml-10">
+              <Button onClick={handleLogin}>Login</Button>
+            </div>
+          )}
+          {isAuthenticated && (
+            <div className="ml-10">
+              <Button onClick={handleLogout}>Logout</Button>
+            </div>
+          )}
           <nav className="ml-auto min-h-[52px]">
             <ul className="flex flex-nowrap list-none opacity-100 m-0">
               <li className="flex items-center">
@@ -99,9 +114,7 @@ const Layout = () => {
           </nav>
         </div>
       </header>
-      <div className="pt-[53px]">
-        <Outlet />
-      </div>
+      <div className="pt-[53px]">{isAuthenticated && <Outlet />}</div>
     </div>
   );
 };

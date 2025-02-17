@@ -12,6 +12,7 @@
     "@rspack/core": "~1.2.0",
     "@rspack/plugin-react-refresh": "~1.0.1",
     "@tailwindcss/postcss": "^4.0.3",
+    "@types/node": "^22.13.1",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "autoprefixer": "^10.1.0",
@@ -19,11 +20,13 @@
     "postcss": "^8.2.1",
     "postcss-loader": "^8.0.0",
     "react-refresh": "^0.14.0",
+    "rspack-plugin-dotenv": "^0.0.3",
     "tailwindcss": "^4.0.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   },
   "dependencies": {
+    "@auth0/auth0-react": "^2.3.0",
     "@career-up/shell-router": "workspace:*",
     "@career-up/ui-kit": "workspace:*",
     "@module-federation/enhanced": "^0.8.9",

@@ -78,6 +78,9 @@ importers:
 
   apps/shell:
     dependencies:
+      '@auth0/auth0-react':
+        specifier: ^2.3.0
+        version: 2.3.0(react-dom@19.0.0)(react@19.0.0)
       '@career-up/shell-router':
         specifier: workspace:*
         version: link:../../packages/shell-router
@@ -109,6 +112,9 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4.0.3
         version: 4.0.6
+      '@types/node':
+        specifier: ^22.13.1
+        version: 22.13.1
       '@types/react':
         specifier: ^19.0.0
         version: 19.0.8
@@ -130,6 +136,9 @@ importers:
       react-refresh:
         specifier: ^0.14.0
         version: 0.14.2
+      rspack-plugin-dotenv:
+        specifier: ^0.0.3
+        version: 0.0.3(@rspack/core@1.2.3)
       tailwindcss:
         specifier: ^4.0.3
         version: 4.0.6
@@ -270,6 +279,21 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
     dev: true
+
+  /@auth0/auth0-react@2.3.0(react-dom@19.0.0)(react@19.0.0):
+    resolution: {integrity: sha512-YYTc/DWWigKC9fURufR/79h3+3DAnIzbfEzJLZ8Z4Q0BXE0azru3pKUbU+vYzS4lMAJkclwLuAbUnLjK81vCpA==}
+    peerDependencies:
+      react: ^16.11.0 || ^17 || ^18 || ^19
+      react-dom: ^16.11.0 || ^17 || ^18 || ^19
+    dependencies:
+      '@auth0/auth0-spa-js': 2.1.3
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
+    dev: false
+
+  /@auth0/auth0-spa-js@2.1.3:
+    resolution: {integrity: sha512-NMTBNuuG4g3rame1aCnNS5qFYIzsTUV5qTFPRfTyYFS1feS6jsCBR+eTq9YkxCp1yuoM2UIcjunPaoPl77U9xQ==}
+    dev: false
 
   /@babel/code-frame@7.26.2:
     resolution: {integrity: sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==}
@@ -2655,6 +2679,17 @@ packages:
       '@leichtgewicht/ip-codec': 2.0.5
     dev: true
 
+  /dotenv-defaults@5.0.2:
+    resolution: {integrity: sha512-y5z4NhblzwNk8XBIYVzjLcFkANK0rxbRDO6kGOfH9QrVYIGVEX52IqwSprKVsaLHM9pnNkCSxazZF/JPydDPvA==}
+    dependencies:
+      dotenv: 14.3.2
+    dev: true
+
+  /dotenv@14.3.2:
+    resolution: {integrity: sha512-vwEppIphpFdvaMCaHfCEv9IgwcxMljMw2TnAQBB4VWPvzXQLTb82jwmdOKzlEVUL3gNFT4l4TPKO+Bn+sqcrVQ==}
+    engines: {node: '>=12'}
+    dev: true
+
   /dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
@@ -4587,6 +4622,15 @@ packages:
       '@rollup/rollup-win32-ia32-msvc': 4.34.6
       '@rollup/rollup-win32-x64-msvc': 4.34.6
       fsevents: 2.3.3
+
+  /rspack-plugin-dotenv@0.0.3(@rspack/core@1.2.3):
+    resolution: {integrity: sha512-6LpyPw3Yyg7zHVOKqM5WGvw0ESp/j7w1tb1IrUAOkT48LUf9vbvS5Z5OUgy27kq2O+CY4oTtoHdD+8ZvnXKsCw==}
+    peerDependencies:
+      '@rspack/core': ^0.3.10
+    dependencies:
+      '@rspack/core': 1.2.3
+      dotenv-defaults: 5.0.2
+    dev: true
 
   /run-applescript@7.0.0:
     resolution: {integrity: sha512-9by4Ij99JUr/MCFBUkDKLWK3G9HVXmabKz9U5MlIAIuvuzkiOicRYs8XJLxX+xahD+mLiiCYDqF9dKAgtzKP1A==}
