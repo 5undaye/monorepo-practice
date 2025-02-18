@@ -14,7 +14,7 @@ server.use(async (req, res, next) => {
   }
 });
 
-server.get("/users", (req, res) => {
+server.get("/user", (req, res) => {
   res.jsonp({ ...req.user, view_count: 249, update_count: 100 });
 });
 
@@ -40,7 +40,7 @@ async function isAuthorized(req) {
   try {
     const Authorization = req.headers.authorization;
 
-    const res = await fetch(`https://${AUTH0_DOMAIN}/userInfo`, {
+    const res = await fetch(`https://${AUTH0_DOMAIN}/userinfo`, {
       headers: {
         Authorization,
       },

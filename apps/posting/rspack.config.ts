@@ -3,7 +3,7 @@ import { defineConfig } from "@rspack/cli";
 import { rspack } from "@rspack/core";
 import * as RefreshPlugin from "@rspack/plugin-react-refresh";
 import { ModuleFederationPlugin } from "@module-federation/enhanced/rspack";
-
+import { DotenvPlugin } from "rspack-plugin-dotenv";
 
 import { mfConfig } from "./module-federation.config";
 
@@ -78,6 +78,7 @@ export default defineConfig({
     new rspack.HtmlRspackPlugin({
       template: "./index.html",
     }),
+    new DotenvPlugin(),
     new ModuleFederationPlugin(mfConfig),
     isDev ? new RefreshPlugin() : null,
   ].filter(Boolean),

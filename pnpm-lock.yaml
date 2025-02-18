@@ -11,9 +11,15 @@ importers:
       turbo:
         specifier: ^2.4.2
         version: 2.4.2
+      typescript:
+        specifier: ^5.7.3
+        version: 5.7.3
 
   apps/posting:
     dependencies:
+      '@auth0/auth0-spa-js':
+        specifier: ^2.1.3
+        version: 2.1.3
       '@career-up/shell-router':
         specifier: workspace:*
         version: link:../../packages/shell-router
@@ -45,6 +51,9 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4.0.3
         version: 4.0.6
+      '@types/node':
+        specifier: ^22.13.1
+        version: 22.13.1
       '@types/react':
         specifier: ^19.0.0
         version: 19.0.8
@@ -66,6 +75,9 @@ importers:
       react-refresh:
         specifier: ^0.14.0
         version: 0.14.2
+      rspack-plugin-dotenv:
+        specifier: ^0.0.3
+        version: 0.0.3(@rspack/core@1.2.3)
       tailwindcss:
         specifier: ^4.0.3
         version: 4.0.6
