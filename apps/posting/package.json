@@ -8,6 +8,7 @@
     "start": "NODE_ENV=development rspack serve"
   },
   "devDependencies": {
+    "@eslint/js": "^9.19.0",
     "@rspack/cli": "~1.2.0",
     "@rspack/core": "~1.2.0",
     "@rspack/plugin-react-refresh": "~1.0.1",
@@ -17,13 +18,18 @@
     "@types/react-dom": "^19.0.0",
     "autoprefixer": "^10.1.0",
     "css-loader": "^7.1.2",
+    "eslint": "^9.19.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.14.0",
     "postcss": "^8.2.1",
     "postcss-loader": "^8.0.0",
     "react-refresh": "^0.14.0",
     "rspack-plugin-dotenv": "^0.0.3",
     "tailwindcss": "^4.0.3",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.22.0"
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^2.1.3",

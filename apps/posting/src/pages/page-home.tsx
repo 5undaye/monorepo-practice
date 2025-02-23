@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import useAuth0Client from "../hooks/use-auth0-client";
 
-const page = () => {
+const Page = () => {
   const auth0Client = useAuth0Client();
 
   useEffect(() => {
@@ -13,9 +13,9 @@ const page = () => {
         console.error(error);
       }
     })();
-  }, [auth0Client]);
+  }, []);
 
   return <div>Posting Home</div>;
 };
 
-export default page;
+export default Page;
