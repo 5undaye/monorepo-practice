@@ -1,16 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "message": "지난 12월 15일, 쿠팡은 연말을 맞아 잠실 오피스에서 쿠팡 및 자회사 임직원을 위한 가족 행사 ‘엄마 아빠 회사는 처음이지?’를 진행하였습니다.",
-      "createdAt": "2023-12-27T15:34:01.085Z",
-      "author": {
-        "email": "2woongjae@gmail.com",
-        "name": "Mark Lee",
-        "picture": "https://lh3.googleusercontent.com/a/ACg8ocLQFU3l4dhf-6T83mF9ZcQ3NKDK3my_nOKuUhoIml3AkCU=s96-c"
-      }
-    },
-    {
       "id": 2,
       "message": "토스의 팀 빌딩을 함께할 (저희)팀원을 찾습니다! 💪<br /><br />Talent Engagement Partner(TEP) 팀은 Culture & Leadership Tribe 소속으로 토스 커뮤니티 내 C-Suite(CEO, CFO 등)을 포함한 Executive Position 을 채용하고 있어요.<br /><br />국내외 최고 수준의 인재들과 지속적인 관계를 형성하고, 이들을 채용하는 데 필요한 모든 프로세스를 담당하고 있어요.",
       "createdAt": "2023-12-27T15:34:01.085Z",
@@ -27,26 +17,6 @@
       "author": {
         "email": "2woongjae@gmail.com",
         "name": "Mark Lee",
-        "picture": "https://lh3.googleusercontent.com/a/ACg8ocLQFU3l4dhf-6T83mF9ZcQ3NKDK3my_nOKuUhoIml3AkCU=s96-c"
-      }
-    },
-    {
-      "id": 4,
-      "message": "- 올바른 프로젝트를 선택하는 것은 생산성의 가장 중요한 요소이다. 그러나 일반적으로 이것을 무시하는 경향이 있다.<br><br>- 생산성 메커니즘을 개선하기 전에 의미 있고 영향력 있는 프로젝트를 선택하는 것이 중요하다<br><br>- 마지막으로 다시 한 번 강조하지만, 잘못된 방향으로의 생산성은 전혀 가치가 없다. 어떤 작업을 할 것인지에 대해 더 많이 생각해야한다<br><br>- 생산성 자체는 노력의 방향을 안내하는 목적의식적이고 사려 깊은 목표 없이는 아무 의미가 없다",
-      "createdAt": "2023-12-27T15:34:01.085Z",
-      "author": {
-        "name": "Mark Lee",
-        "email": "2woongjae@gmail.com",
-        "picture": "https://lh3.googleusercontent.com/a/ACg8ocLQFU3l4dhf-6T83mF9ZcQ3NKDK3my_nOKuUhoIml3AkCU=s96-c"
-      }
-    },
-    {
-      "id": 5,
-      "message": "💗Presto Labs Year-end Party 2023💗<br>지난주 Presto Labs에서 year-end party 시간을 가졌습니다.<br>올 한해 동안 정말 많은 것들을 이뤄낸 우리 팀 동료들이 자랑스러웠네요.<br><br>함께 이루어낸 성취를 기뻐하고 기념하며, Work hard & play hard를 진심으로 보여주는 동료들 덕분에 행사 내내 웃음이 끊이질 않았습니다. <br>Presto 동료분들 올 한해 정말 수고 많으셨습니다! 덕분에 다가올 2024년도 많이 기대가 됩니다. :)<br><br>Last week, we wrapped up the year with an awesome party at Presto Labs.<br>I'm really proud of our team for all the amazing work we've done this year.<br><br>Celebrating our accomplishments together, and thanks to colleagues who truly showed the 'Work hard & play hard', the event was filled with laughter and fun moments.<br>Kudos to everyone at Presto for all the grit this year! Can't wait to see what 2024 has in store for us. Wishing everyone joyful end to the year. 🫶💌",
-      "createdAt": "2023-12-27T15:34:52.328Z",
-      "author": {
-        "name": "Mark Lee",
-        "email": "2woongjae@gmail.com",
         "picture": "https://lh3.googleusercontent.com/a/ACg8ocLQFU3l4dhf-6T83mF9ZcQ3NKDK3my_nOKuUhoIml3AkCU=s96-c"
       }
     }

@@ -13,13 +13,11 @@ server.use(async (req, res, next) => {
     res.sendStatus(401);
   }
 });
-
 server.get("/user", (req, res) => {
   res.jsonp({ ...req.user, view_count: 249, update_count: 100 });
 });
 
 server.use(jsonServer.bodyParser);
-
 server.post("/posts", (req, res, next) => {
   req.body.createdAt = new Date().toISOString();
   req.body.author = {
@@ -27,13 +25,12 @@ server.post("/posts", (req, res, next) => {
     email: req.user.email,
     picture: req.user.picture,
   };
-
   next();
 });
 
 server.use(router);
 server.listen(4000, () => {
-  console.log("JSON Server is Running");
+  console.log("JSON Server is running");
 });
 
 async function isAuthorized(req) {
@@ -46,7 +43,9 @@ async function isAuthorized(req) {
       },
     });
 
-    req.user = await res.json();
+    const json = await res.json();
+
+    req.user = json;
 
     return true;
   } catch (e) {

@@ -19,16 +19,11 @@ export default function useAppEvent(type: string) {
     window.addEventListener("[app-shell] navigated", shellNavigationHandler);
 
     return () => {
-      window.removeEventListener(
-        "[app-shell] navigated",
-        shellNavigationHandler
-      );
+      window.removeEventListener("[app-shell] navigated", shellNavigationHandler);
     };
   }, [location, navigate]);
 
   useEffect(() => {
-    window.dispatchEvent(
-      new CustomEvent(`[${type}] navigated`, { detail: location.pathname })
-    );
+    window.dispatchEvent(new CustomEvent(`[${type}] navigated`, { detail: location.pathname }));
   }, [location, type]);
 }
