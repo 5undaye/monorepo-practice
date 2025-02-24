@@ -18,22 +18,19 @@ export default defineConfig({
     main: "./src/index.ts",
   },
   resolve: {
-    alias: {
-      "posting/injector": path.resolve(__dirname, "../posting/src/injector.tsx"),
-    },
     extensions: ["...", ".ts", ".tsx", ".jsx"],
   },
 
   devServer: {
-    port: 3000,
+    port: 3002,
     historyApiFallback: true,
     watchFiles: [path.resolve(__dirname, "src")],
   },
   output: {
     // You need to set a unique value that is not equal to other applications
-    uniqueName: "shell",
+    uniqueName: "edu",
     // publicPath must be configured if using manifest
-    publicPath: "http://localhost:3000/",
+    publicPath: "http://localhost:3002/",
   },
 
   experiments: {

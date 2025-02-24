@@ -78,7 +78,7 @@ export default defineConfig({
     new rspack.HtmlRspackPlugin({
       template: "./index.html",
     }),
-    new DotenvPlugin(),
+    new DotenvPlugin({ path: "../../.env" }),
     new ModuleFederationPlugin(mfConfig),
     isDev ? new RefreshPlugin() : null,
   ].filter(Boolean),
