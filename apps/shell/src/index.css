@@ -1,3 +1,31 @@
 @import "tailwindcss";
 
 @import "@career-up/ui-kit/index.css";
+
+html {
+  line-height: normal;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f2ee;
+}
+
+img {
+  max-width: none;
+}
+
+button {
+  font-size: revert;
+}
+
+* {
+  box-sizing: revert;
+}
+
+h3,
+p {
+  all: revert;
+}

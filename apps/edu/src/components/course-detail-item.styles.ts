@@ -11,11 +11,12 @@ export const CourseDetailItemWrapper = styled.div`
 
   .edu--course-detail-item-thumbnail {
     flex: 1;
-    min-width: 308px;
     width: 308px;
     height: 168px;
 
     img {
+      width: 308px;
+      height: 168px;
       border-radius: 8px;
     }
   }

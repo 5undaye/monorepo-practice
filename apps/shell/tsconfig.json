@@ -15,7 +15,8 @@
     "paths": {
       "*": ["./@mf-types/*"],
       "posting/injector": ["../posting/src/injector.tsx"],
-      "edu/injector": ["../edu/src/injector.tsx"]
+      "edu/injector": ["../edu/src/injector.tsx"],
+      "network/injector": ["../network/src/injector.tsx"]
     }
   },
   "include": ["src"],

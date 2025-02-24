@@ -13,6 +13,7 @@ server.use(async (req, res, next) => {
     res.sendStatus(401);
   }
 });
+
 server.get("/user", (req, res) => {
   res.jsonp({
     ...req.user,
@@ -23,6 +24,10 @@ server.get("/user", (req, res) => {
       { courseId: 4, done: false },
     ],
   });
+});
+
+server.get("/my-network", (req, res) => {
+  res.jsonp({ connectionCount: 8, contactCount: 3724, eventCount: 0, pageCount: 0, user: req.user });
 });
 
 server.use(jsonServer.bodyParser);
