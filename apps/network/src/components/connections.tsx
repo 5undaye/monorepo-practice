@@ -9,8 +9,6 @@ interface ConnectionsProps {
 }
 
 const Connections = ({ connections, fetchConnections }: ConnectionsProps) => {
-  console.log(connections);
-
   useEffect(() => {
     fetchConnections();
   }, [fetchConnections]);
@@ -19,8 +17,8 @@ const Connections = ({ connections, fetchConnections }: ConnectionsProps) => {
     <div className={css.wrapper}>
       <div>서울 인천 지역에 사는 사람</div>
       <div className={css.connections}>
-        {connections.map((connection) => (
-          <Connection {...connection} />
+        {connections.map((connection, i) => (
+          <Connection key={i} {...connection} />
         ))}
       </div>
     </div>

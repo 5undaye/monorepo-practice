@@ -13,11 +13,7 @@
     "useDefineForClassFields": true,
     "allowImportingTsExtensions": true,
     "paths": {
-      "*": ["./@mf-types/*"],
-      "posting/injector": ["../posting/src/injector.tsx"],
-      "edu/injector": ["../edu/src/injector.tsx"],
-      "network/injector": ["../network/src/injector.tsx"],
-      "job/injector": ["../job/src/injector.tsx"]
+      "*": ["./@mf-types/*"]
     }
   },
   "include": ["src"],

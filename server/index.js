@@ -30,6 +30,10 @@ server.get("/my-network", (req, res) => {
   res.jsonp({ connectionCount: 8, contactCount: 3724, eventCount: 0, pageCount: 0, user: req.user });
 });
 
+server.get("/apply-status", (req, res) => {
+  res.jsonp({ myJobsCount: 13, myOnlineClassesCount: 11, mySavedUpdatesCount: 1 });
+});
+
 server.use(jsonServer.bodyParser);
 server.post("/posts", (req, res, next) => {
   req.body.createdAt = new Date().toISOString();
