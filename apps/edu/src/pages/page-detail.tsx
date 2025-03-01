@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import useAuth0Client from "../hooks/use-auth0-client";
-
 import CourseDetailItem from "../components/course-detail-item";
 import CourseContents from "../components/course-contents";
 import CourseActions from "../components/course-actions";
@@ -12,6 +10,8 @@ import { useCourseStore } from "../store";
 import { getCourseContents } from "../apis";
 
 import { type CourseContentsType } from "../types";
+
+import { useAuth0Client } from "@career-up/shell-router";
 
 const Page = () => {
   const { id } = useParams();

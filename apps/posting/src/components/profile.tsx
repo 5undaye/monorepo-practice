@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-import useAuth0Client from "../hooks/use-auth0-client";
-
 import { type UserType } from "../types";
 import { getUser } from "../apis";
+
+import { useAuth0Client } from "@career-up/shell-router";
 
 import "./profile.css";
 

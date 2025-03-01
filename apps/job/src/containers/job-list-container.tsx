@@ -1,11 +1,10 @@
 import { useCallback } from "react";
 import JobList from "../components/job-list";
 
-import useAuth0Client from "../hooks/use-auth0-client";
-("../redux/modules/jobs");
 import { getJobs } from "../apis";
 import { jobsAtom } from "../atoms";
 import { useAtom } from "jotai";
+import { useAuth0Client } from "@career-up/shell-router";
 
 const JobListContainer = () => {
   const auth0Client = useAuth0Client();

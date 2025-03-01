@@ -1,10 +1,10 @@
 import { useCallback } from "react";
 import ApplyStatus from "../components/apply-status";
 
-import useAuth0Client from "../hooks/use-auth0-client";
 import { getApplyStatus } from "../apis";
 import { useAtom } from "jotai";
 import { applyStatusAtom } from "../atoms";
+import { useAuth0Client } from "@career-up/shell-router";
 
 const ApplyStatusContainer = () => {
   const auth0Client = useAuth0Client();

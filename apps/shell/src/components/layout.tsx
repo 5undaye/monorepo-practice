@@ -3,8 +3,11 @@ import { Link, NavLink, Outlet } from "react-router-dom";
 import { appEduBasename, appJobBasename, appNetworkBasename, appPostingBasename } from "../constants/prefix";
 import { Button, Icon } from "@career-up/ui-kit";
 import { useAuth0 } from "@auth0/auth0-react";
+import { useShellNavigateListener } from "@career-up/shell-router";
 
 const Layout = () => {
+  useShellNavigateListener();
+
   const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
 
   const handleLogin = async () => {

@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import useAuth0Client from "../hooks/use-auth0-client";
 
 import { useCourseStore, useUserStore } from "../store";
 
@@ -8,7 +7,10 @@ import ProfileContainer from "../containers/profile-container";
 import { getCourses, getUser } from "../apis";
 
 import { LayoutWrapper } from "./layout.styles";
+
 import MyCourseInfoContainer from "../containers/my-course-info-container";
+
+import { useAuth0Client } from "@career-up/shell-router";
 const Layout = ({ children }: { children: React.ReactNode }) => {
   console.log("A");
 

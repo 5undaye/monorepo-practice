@@ -4,9 +4,9 @@ import MyNetwork from "../components/my-network";
 
 import { useMyNetworkStore } from "../store";
 
-import useAuth0Client from "../hooks/use-auth0-client";
-
 import { getMyNetwork } from "../apis";
+
+import { useAuth0Client } from "@career-up/shell-router";
 
 const MyNetworkContainer = () => {
   const auth0Client = useAuth0Client();

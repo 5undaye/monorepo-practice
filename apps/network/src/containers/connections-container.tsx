@@ -1,8 +1,9 @@
 import { useCallback } from "react";
-import useAuth0Client from "../hooks/use-auth0-client";
+
 import { useConnectionsStore } from "../store";
 import { getConnections } from "../apis";
 import Connections from "../components/connections";
+import { useAuth0Client } from "@career-up/shell-router";
 
 const ConnectionsContainer = () => {
   const auth0Client = useAuth0Client();
